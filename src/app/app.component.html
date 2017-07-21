@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+<div>
+  <md-toolbar color="primary">
+    
+    <span class="app-toolbar-filler"></span> 
+    Table Data
+    <span class="app-toolbar-filler"></span> 
+    
+  </md-toolbar>
+
+  <md-card>
+    <div class="col-md-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+           <td><span class="names">First Name</span></td>
+           <td><span class="names">Last Name</span></td>
+           <td><span class="names">Home</span></td>
+         </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of table_data; let i = index" >
+
+             <td>{{data.first_name}}</td>
+
+             <td>{{data.last_name}}</td>
+
+             <td>{{data.home}}</td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+  </md-card>
+
+</div>
