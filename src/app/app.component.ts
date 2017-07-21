@@ -32,7 +32,11 @@ export class AppComponent {
                      last_name  : 'Foreman',
                      home       : 'Gallifrey'} ] ;		   
 
-  getFirstNames():String[] {
+
+//Below are Functions that actually sort first_name, last_name, and home into arrays
+//I was able to display them on the table, but only in one long row, as opposed to how it's supposedd to be. 
+
+  /*getFirstNames():String[] {
   	return [].concat.apply([],this.table_data.map(data => data.first_name))
   }
 
@@ -42,5 +46,7 @@ export class AppComponent {
 
   getHome():String[] {
   	return [].concat.apply([],this.table_data.map(data => data.home))
-  }
+  }*/
+
+
 }
